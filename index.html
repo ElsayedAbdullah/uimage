@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>UImage</title>
+</head>
+<body>
+    
+    <div class="container">
+        <header>
+            <img src="images/logo.svg" alt="">
+            <div class="sign-in">
+                <button class="login" id="login">Login</button>
+                <button class="sign-up blue-btn" id="sign-up">Sign up</button>
+            </div>
+        </header>
+        <div class="wrapper">
+            <div class="left">
+                <div class="advertising left-part">Reserved for ADs</div>
+                <div class="advertising left-part">Reserved for ADs</div>
+            </div>
+            <div class="vertical">
+                <div class="advertising top">Reserved for ADs</div>
+                <div class="main">
+                    <p class="photographer">
+                        <i>image by <span><a href="https://unsplash.com/@alexstarnes">Alex starnes</a></span></i>
+                    </p>
+                    <div class="toggle-me">
+                        <span class="male active "><i class="fa-solid fa-mars"></i> Male</span>
+                        <span class="female" ><i class="fa-solid fa-venus"></i> Female</span>
+                    </div>
+                    <div class="image-wrapper">
+                        <img id="display-picture" src="images/male-1.png" alt="">
+                    </div>
+                    <div class="pallete">
+                        <div class="color-circle"><img src="images/pattern.svg" alt=""></div>
+                        <input type="color" class="color-circle">
+                        <button class="color-circle" style="background: #FCC219;"></button>
+                        <button class="color-circle" style="background: #F85A16;"></button>
+                        <button class="color-circle" style="background: #FD0070;"></button>
+                        <button class="color-circle picked" style="background: #870AEC;"></button>
+                        <button class="color-circle" style="background: #497CFE;"></button>
+                        <button class="color-circle" style="background: #1BD8A0;"></button>
+                        <button class="color-circle" style="background: #0D3A4C;"></button>
+                    </div>
+                    <div class="tool-options">
+                        <button class="shuffle blue-btn"><i class="fa-solid fa-shuffle"></i>Shuffle</button>
+                        <button class="copy">
+                            <div class="selected">
+                                <img src="images/Icon-copy.svg">
+                                <span class="px">512px</span>
+                            </div>
+            
+                            <i class="fa-solid fa-angle-down"></i>
+                        </button>
+                        <button class="copy">
+                            <div class="selected">
+                                <img src="images/Icon-download.svg">
+                                <span class="px">512px</span>
+                            </div>
+            
+                            <i class="fa-solid fa-angle-down"></i>
+                        </button>
+            
+                        <button class="save copy">
+                            <img src="images/Icon-save.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+                <div class="down-text">
+                    <p class="copy-rights">©2022 UImage. All rights reserved.</p>
+                    <p class="contributers">Designed by <i>Eslam</i>, Developed by <i>Sayed</i></p>
+                </div>
+            
+            
+            </div>
+            <div class="right">
+                <div class="advertising right-part">Reserved for ADs</div>
+                <div class="advertising right-part">Reserved for ADs</div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
