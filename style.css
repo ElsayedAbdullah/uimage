@@ -6,18 +6,19 @@
   margin: 0;
 }
 
-button {
-  cursor: pointer;
-  font-family: inherit;
-  font-size: 14px;
-  font-weight: 500;
-}
-
 body {
   font-family: 'Inter', sans-serif;
   height: 100vh;
   margin: 0;
   font-weight: 500;
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 500;
+  border: 0;
 }
 
 .container {
@@ -53,13 +54,20 @@ header {
   border: 1px solid #102ca1;
 }
 
-.sign-up {
-  margin-left: 8px;
+.sign-in {
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
 
 .login {
   background-color: transparent;
-  border: 0;
+  padding: 10px;
+  transition: 0.2s;
+}
+
+.login:hover {
+  color: #2c55fe;
 }
 
 .wrapper {
@@ -206,6 +214,10 @@ input[type='color']::-webkit-color-swatch {
   gap: 8px;
 }
 
+.tool-options button {
+  height: 36px;
+}
+
 .shuffle {
   display: flex;
   align-items: center;
@@ -255,7 +267,7 @@ input[type='color']::-webkit-color-swatch {
   border-style: solid;
   border-color: #1b1d1f transparent transparent transparent;
   display: block;
-  bottom: -11px;
+  bottom: -10px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 1;
@@ -346,6 +358,7 @@ input[type='color']::-webkit-color-swatch {
   height: 112px;
   width: 570px;
   margin: 0 auto 20px;
+  opacity: 0;
 }
 
 .left-part,
@@ -355,4 +368,9 @@ input[type='color']::-webkit-color-swatch {
 
 footer {
   text-align: center;
+}
+
+/* helper classes */
+.hidden {
+  display: none !important;
 }
