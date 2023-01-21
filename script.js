@@ -38,7 +38,7 @@ coloredCircles.forEach((circle, idx) => {
 
     let pickedColor = circle.style.background;
     if (idx == 0) {
-      picture.style.backgroundImage = 'linear-gradient(to right bottom, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.2)), url(images/pattern.png)';
+      picture.style.backgroundImage = 'linear-gradient(to right bottom, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.2)), url(/images/pattern.png)';
     } else if (idx > 1) {
       //   picture.style.background = 'none';
       picture.style.background = pickedColor;
